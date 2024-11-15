@@ -1,0 +1,574 @@
+import '1c.dart';
+import 'abnf.dart';
+import 'accesslog.dart';
+import 'actionscript.dart';
+import 'ada.dart';
+import 'angelscript.dart';
+import 'apache.dart';
+import 'applescript.dart';
+import 'arcade.dart';
+import 'arduino.dart';
+import 'armasm.dart';
+import 'asciidoc.dart';
+import 'aspectj.dart';
+import 'autohotkey.dart';
+import 'autoit.dart';
+import 'avrasm.dart';
+import 'awk.dart';
+import 'axapta.dart';
+import 'bash.dart';
+import 'basic.dart';
+import 'bnf.dart';
+import 'brainfuck.dart';
+import 'cal.dart';
+import 'capnproto.dart';
+import 'ceylon.dart';
+import 'clean.dart';
+import 'clojure-repl.dart';
+import 'clojure.dart';
+import 'cmake.dart';
+import 'coffeescript.dart';
+import 'coq.dart';
+import 'cos.dart';
+import 'cpp.dart';
+import 'crmsh.dart';
+import 'crystal.dart';
+import 'cs.dart';
+import 'csp.dart';
+import 'css.dart';
+import 'd.dart';
+import 'dart.dart';
+import 'delphi.dart';
+import 'diff.dart';
+import 'django.dart';
+import 'dns.dart';
+import 'dockerfile.dart';
+import 'dos.dart';
+import 'dsconfig.dart';
+import 'dts.dart';
+import 'dust.dart';
+import 'ebnf.dart';
+import 'elixir.dart';
+import 'elm.dart';
+import 'erb.dart';
+import 'erlang-repl.dart';
+import 'erlang.dart';
+import 'excel.dart';
+import 'fix.dart';
+import 'flix.dart';
+import 'fortran.dart';
+import 'fsharp.dart';
+import 'gams.dart';
+import 'gauss.dart';
+import 'gcode.dart';
+import 'gherkin.dart';
+import 'glsl.dart';
+import 'gml.dart';
+import 'go.dart';
+import 'golo.dart';
+import 'gradle.dart';
+import 'groovy.dart';
+import 'haml.dart';
+import 'handlebars.dart';
+import 'haskell.dart';
+import 'haxe.dart';
+import 'hsp.dart';
+import 'htmlbars.dart';
+import 'http.dart';
+import 'hy.dart';
+import 'inform7.dart';
+import 'ini.dart';
+import 'irpf90.dart';
+import 'isbl.dart';
+import 'java.dart';
+import 'javascript.dart';
+import 'jboss-cli.dart';
+import 'json.dart';
+import 'julia-repl.dart';
+import 'julia.dart';
+import 'kotlin.dart';
+import 'lasso.dart';
+import 'ldif.dart';
+import 'leaf.dart';
+import 'less.dart';
+import 'lisp.dart';
+import 'livecodeserver.dart';
+import 'livescript.dart';
+import 'llvm.dart';
+import 'lsl.dart';
+import 'lua.dart';
+import 'makefile.dart';
+import 'markdown.dart';
+import 'mathematica.dart';
+import 'matlab.dart';
+import 'maxima.dart';
+import 'mel.dart';
+import 'mercury.dart';
+import 'mipsasm.dart';
+import 'mizar.dart';
+import 'mojolicious.dart';
+import 'monkey.dart';
+import 'moonscript.dart';
+import 'n1ql.dart';
+import 'nginx.dart';
+import 'nimrod.dart';
+import 'nix.dart';
+import 'nsis.dart';
+import 'objectivec.dart';
+import 'ocaml.dart';
+import 'openscad.dart';
+import 'oxygene.dart';
+import 'parser3.dart';
+import 'perl.dart';
+import 'pf.dart';
+import 'pgsql.dart';
+import 'php.dart';
+import 'plaintext.dart';
+import 'pony.dart';
+import 'powershell.dart';
+import 'processing.dart';
+import 'profile.dart';
+import 'prolog.dart';
+import 'properties.dart';
+import 'protobuf.dart';
+import 'puppet.dart';
+import 'purebasic.dart';
+import 'python.dart';
+import 'q.dart';
+import 'qml.dart';
+import 'r.dart';
+import 'reasonml.dart';
+import 'rib.dart';
+import 'roboconf.dart';
+import 'routeros.dart';
+import 'rsl.dart';
+import 'ruby.dart';
+import 'ruleslanguage.dart';
+import 'rust.dart';
+import 'sas.dart';
+import 'scala.dart';
+import 'scheme.dart';
+import 'scilab.dart';
+import 'scss.dart';
+import 'shell.dart';
+import 'smali.dart';
+import 'smalltalk.dart';
+import 'sml.dart';
+import 'sqf.dart';
+import 'sql.dart';
+import 'stan.dart';
+import 'stata.dart';
+import 'step21.dart';
+import 'stylus.dart';
+import 'subunit.dart';
+import 'swift.dart';
+import 'taggerscript.dart';
+import 'tap.dart';
+import 'tcl.dart';
+import 'tex.dart';
+import 'thrift.dart';
+import 'tp.dart';
+import 'twig.dart';
+import 'typescript.dart';
+import 'vala.dart';
+import 'vbnet.dart';
+import 'vbscript-html.dart';
+import 'vbscript.dart';
+import 'verilog.dart';
+import 'vhdl.dart';
+import 'vim.dart';
+import 'x86asm.dart';
+import 'xl.dart';
+import 'xml.dart';
+import 'xquery.dart';
+import 'yaml.dart';
+import 'zephir.dart';
+import 'vue.dart';
+import 'graphql.dart';
+import 'gn.dart';
+import 'solidity.dart';
+
+export '1c.dart';
+export 'abnf.dart';
+export 'accesslog.dart';
+export 'actionscript.dart';
+export 'ada.dart';
+export 'angelscript.dart';
+export 'apache.dart';
+export 'applescript.dart';
+export 'arcade.dart';
+export 'arduino.dart';
+export 'armasm.dart';
+export 'asciidoc.dart';
+export 'aspectj.dart';
+export 'autohotkey.dart';
+export 'autoit.dart';
+export 'avrasm.dart';
+export 'awk.dart';
+export 'axapta.dart';
+export 'bash.dart';
+export 'basic.dart';
+export 'bnf.dart';
+export 'brainfuck.dart';
+export 'cal.dart';
+export 'capnproto.dart';
+export 'ceylon.dart';
+export 'clean.dart';
+export 'clojure-repl.dart';
+export 'clojure.dart';
+export 'cmake.dart';
+export 'coffeescript.dart';
+export 'coq.dart';
+export 'cos.dart';
+export 'cpp.dart';
+export 'crmsh.dart';
+export 'crystal.dart';
+export 'cs.dart';
+export 'csp.dart';
+export 'css.dart';
+export 'd.dart';
+export 'dart.dart';
+export 'delphi.dart';
+export 'diff.dart';
+export 'django.dart';
+export 'dns.dart';
+export 'dockerfile.dart';
+export 'dos.dart';
+export 'dsconfig.dart';
+export 'dts.dart';
+export 'dust.dart';
+export 'ebnf.dart';
+export 'elixir.dart';
+export 'elm.dart';
+export 'erb.dart';
+export 'erlang-repl.dart';
+export 'erlang.dart';
+export 'excel.dart';
+export 'fix.dart';
+export 'flix.dart';
+export 'fortran.dart';
+export 'fsharp.dart';
+export 'gams.dart';
+export 'gauss.dart';
+export 'gcode.dart';
+export 'gherkin.dart';
+export 'glsl.dart';
+export 'gml.dart';
+export 'go.dart';
+export 'golo.dart';
+export 'gradle.dart';
+export 'groovy.dart';
+export 'haml.dart';
+export 'handlebars.dart';
+export 'haskell.dart';
+export 'haxe.dart';
+export 'hsp.dart';
+export 'htmlbars.dart';
+export 'http.dart';
+export 'hy.dart';
+export 'inform7.dart';
+export 'ini.dart';
+export 'irpf90.dart';
+export 'isbl.dart';
+export 'java.dart';
+export 'javascript.dart';
+export 'jboss-cli.dart';
+export 'json.dart';
+export 'julia-repl.dart';
+export 'julia.dart';
+export 'kotlin.dart';
+export 'lasso.dart';
+export 'ldif.dart';
+export 'leaf.dart';
+export 'less.dart';
+export 'lisp.dart';
+export 'livecodeserver.dart';
+export 'livescript.dart';
+export 'llvm.dart';
+export 'lsl.dart';
+export 'lua.dart';
+export 'makefile.dart';
+export 'markdown.dart';
+export 'mathematica.dart';
+export 'matlab.dart';
+export 'maxima.dart';
+export 'mel.dart';
+export 'mercury.dart';
+export 'mipsasm.dart';
+export 'mizar.dart';
+export 'mojolicious.dart';
+export 'monkey.dart';
+export 'moonscript.dart';
+export 'n1ql.dart';
+export 'nginx.dart';
+export 'nimrod.dart';
+export 'nix.dart';
+export 'nsis.dart';
+export 'objectivec.dart';
+export 'ocaml.dart';
+export 'openscad.dart';
+export 'oxygene.dart';
+export 'parser3.dart';
+export 'perl.dart';
+export 'pf.dart';
+export 'pgsql.dart';
+export 'php.dart';
+export 'plaintext.dart';
+export 'pony.dart';
+export 'powershell.dart';
+export 'processing.dart';
+export 'profile.dart';
+export 'prolog.dart';
+export 'properties.dart';
+export 'protobuf.dart';
+export 'puppet.dart';
+export 'purebasic.dart';
+export 'python.dart';
+export 'q.dart';
+export 'qml.dart';
+export 'r.dart';
+export 'reasonml.dart';
+export 'rib.dart';
+export 'roboconf.dart';
+export 'routeros.dart';
+export 'rsl.dart';
+export 'ruby.dart';
+export 'ruleslanguage.dart';
+export 'rust.dart';
+export 'sas.dart';
+export 'scala.dart';
+export 'scheme.dart';
+export 'scilab.dart';
+export 'scss.dart';
+export 'shell.dart';
+export 'smali.dart';
+export 'smalltalk.dart';
+export 'sml.dart';
+export 'sqf.dart';
+export 'sql.dart';
+export 'stan.dart';
+export 'stata.dart';
+export 'step21.dart';
+export 'stylus.dart';
+export 'subunit.dart';
+export 'swift.dart';
+export 'taggerscript.dart';
+export 'tap.dart';
+export 'tcl.dart';
+export 'tex.dart';
+export 'thrift.dart';
+export 'tp.dart';
+export 'twig.dart';
+export 'typescript.dart';
+export 'vala.dart';
+export 'vbnet.dart';
+export 'vbscript-html.dart';
+export 'vbscript.dart';
+export 'verilog.dart';
+export 'vhdl.dart';
+export 'vim.dart';
+export 'x86asm.dart';
+export 'xl.dart';
+export 'xml.dart';
+export 'xquery.dart';
+export 'yaml.dart';
+export 'zephir.dart';
+export 'vue.dart';
+export 'graphql.dart';
+export 'gn.dart';
+export 'solidity.dart';
+
+final communityLanguages = {
+  'vue': vue,
+  'graphql': graphql,
+  'gn': gn,
+  'solidity': solidity,
+};
+final builtinLanguages = {
+  '1c': lang1C,
+  'abnf': abnf,
+  'accesslog': accesslog,
+  'actionscript': actionscript,
+  'ada': ada,
+  'angelscript': angelscript,
+  'apache': apache,
+  'applescript': applescript,
+  'arcade': arcade,
+  'arduino': arduino,
+  'armasm': armasm,
+  'asciidoc': asciidoc,
+  'aspectj': aspectj,
+  'autohotkey': autohotkey,
+  'autoit': autoit,
+  'avrasm': avrasm,
+  'awk': awk,
+  'axapta': axapta,
+  'bash': bash,
+  'basic': basic,
+  'bnf': bnf,
+  'brainfuck': brainfuck,
+  'cal': cal,
+  'capnproto': capnproto,
+  'ceylon': ceylon,
+  'clean': clean,
+  'clojure-repl': clojureRepl,
+  'clojure': clojure,
+  'cmake': cmake,
+  'coffeescript': coffeescript,
+  'coq': coq,
+  'cos': cos,
+  'cpp': cpp,
+  'crmsh': crmsh,
+  'crystal': crystal,
+  'cs': cs,
+  'csp': csp,
+  'css': css,
+  'd': d,
+  'dart': dart,
+  'delphi': delphi,
+  'diff': diff,
+  'django': django,
+  'dns': dns,
+  'dockerfile': dockerfile,
+  'dos': dos,
+  'dsconfig': dsconfig,
+  'dts': dts,
+  'dust': dust,
+  'ebnf': ebnf,
+  'elixir': elixir,
+  'elm': elm,
+  'erb': erb,
+  'erlang-repl': erlangRepl,
+  'erlang': erlang,
+  'excel': excel,
+  'fix': fix,
+  'flix': flix,
+  'fortran': fortran,
+  'fsharp': fsharp,
+  'gams': gams,
+  'gauss': gauss,
+  'gcode': gcode,
+  'gherkin': gherkin,
+  'glsl': glsl,
+  'gml': gml,
+  'go': go,
+  'golo': golo,
+  'gradle': gradle,
+  'groovy': groovy,
+  'haml': haml,
+  'handlebars': handlebars,
+  'haskell': haskell,
+  'haxe': haxe,
+  'hsp': hsp,
+  'htmlbars': htmlbars,
+  'http': http,
+  'hy': hy,
+  'inform7': inform7,
+  'ini': ini,
+  'irpf90': irpf90,
+  'isbl': isbl,
+  'java': java,
+  'javascript': javascript,
+  'jboss-cli': jbossCli,
+  'json': json,
+  'julia-repl': juliaRepl,
+  'julia': julia,
+  'kotlin': kotlin,
+  'lasso': lasso,
+  'ldif': ldif,
+  'leaf': leaf,
+  'less': less,
+  'lisp': lisp,
+  'livecodeserver': livecodeserver,
+  'livescript': livescript,
+  'llvm': llvm,
+  'lsl': lsl,
+  'lua': lua,
+  'makefile': makefile,
+  'markdown': markdown,
+  'mathematica': mathematica,
+  'matlab': matlab,
+  'maxima': maxima,
+  'mel': mel,
+  'mercury': mercury,
+  'mipsasm': mipsasm,
+  'mizar': mizar,
+  'mojolicious': mojolicious,
+  'monkey': monkey,
+  'moonscript': moonscript,
+  'n1ql': n1Ql,
+  'nginx': nginx,
+  'nimrod': nimrod,
+  'nix': nix,
+  'nsis': nsis,
+  'objectivec': objectivec,
+  'ocaml': ocaml,
+  'openscad': openscad,
+  'oxygene': oxygene,
+  'parser3': parser3,
+  'perl': perl,
+  'pf': pf,
+  'pgsql': pgsql,
+  'php': php,
+  'plaintext': plaintext,
+  'pony': pony,
+  'powershell': powershell,
+  'processing': processing,
+  'profile': profile,
+  'prolog': prolog,
+  'properties': properties,
+  'protobuf': protobuf,
+  'puppet': puppet,
+  'purebasic': purebasic,
+  'python': python,
+  'q': q,
+  'qml': qml,
+  'r': r,
+  'reasonml': reasonml,
+  'rib': rib,
+  'roboconf': roboconf,
+  'routeros': routeros,
+  'rsl': rsl,
+  'ruby': ruby,
+  'ruleslanguage': ruleslanguage,
+  'rust': rust,
+  'sas': sas,
+  'scala': scala,
+  'scheme': scheme,
+  'scilab': scilab,
+  'scss': scss,
+  'shell': shell,
+  'smali': smali,
+  'smalltalk': smalltalk,
+  'sml': sml,
+  'sqf': sqf,
+  'sql': sql,
+  'stan': stan,
+  'stata': stata,
+  'step21': step21,
+  'stylus': stylus,
+  'subunit': subunit,
+  'swift': swift,
+  'taggerscript': taggerscript,
+  'tap': tap,
+  'tcl': tcl,
+  'tex': tex,
+  'thrift': thrift,
+  'tp': tp,
+  'twig': twig,
+  'typescript': typescript,
+  'vala': vala,
+  'vbnet': vbnet,
+  'vbscript-html': vbscriptHtml,
+  'vbscript': vbscript,
+  'verilog': verilog,
+  'vhdl': vhdl,
+  'vim': vim,
+  'x86asm': x86Asm,
+  'xl': xl,
+  'xml': xml,
+  'xquery': xquery,
+  'yaml': yaml,
+  'zephir': zephir,
+};
+final allLanguages = {...builtinLanguages, ...communityLanguages};
